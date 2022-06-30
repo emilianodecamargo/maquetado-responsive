@@ -15,6 +15,14 @@ header{
     align-items: center;
 }
 
+.nav-ul{
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    font-size: 15px;
+}
+
 #logo-cel{
     margin-left: 20px;
 }
@@ -108,7 +116,6 @@ header{
     font-size: 14px;
     color: #323851;
     align-items: center;
-    background-color: rgba(242, 95, 59, 0.10);
     margin-left: 40px;
     padding-left: 45px;
     
@@ -162,6 +169,41 @@ header{
     background-color: #F3603B;
 }
 
+/*####################estilos de la tercera secction descktop#########*/
+#rec-desk{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+
+}
+
+.desk{
+    width: 100vw;
+     display: flex;
+     justify-content: space-between;
+     height: 50vh;
+}
+
+.rec{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30vw;
+}
+
+#rec2{
+    margin-right: 9%;
+}
+
+.p-desk{
+    font-weight: 600;
+    font-size: 16px;
+    color: #B9B9C1;
+    margin: 0%;
+    text-align: center;
+}
+
 /*##########ESTILO PIE DE PAGINA##########*/
 footer{
     width: 100vw;
@@ -189,6 +231,14 @@ footer{
     color: #F3603B;
     margin-top: 30px;
 }
+/*################footer superior desktop#################*/
+.h2-footer-des{
+    font-size: 40px;
+    font-weight: 700;
+    color: #FFFFFF;
+    margin-left: 9%;
+}
+
 /*############################################*/
 .sec-inf{
     height: 60%;
@@ -196,7 +246,6 @@ footer{
 }
 
 .form{
-    width: 100vw;
     height: 130px;
     display: flex;
     justify-content: space-between;
@@ -224,10 +273,18 @@ footer{
     font-weight: 700;
 }
 
+/*copyr del desktop*/
+#p-form{
+    font-size: 12.5px;
+    font-weight: 500;
+    color: #8C8C94;
+}
+
 /*###################ESTILOS DEL NAV ##################*/
 .option{
     display: flex;
     justify-content: space-between;
+    margin-bottom: 15px;
 }
 
 .ul-footer{
@@ -243,14 +300,18 @@ footer{
 .iconos{
     display: flex;
     justify-content: space-around;
-    margin-top: 20px;
 
+}
+
+.fa-brands{
+    color: #FFFFFF;
 }
 /*##############################*/
 .Logo-pie{
     text-align: center;
     margin-top: 40px;
     margin-bottom: 50px;
+    
 }
 
 .copyr{
@@ -259,4 +320,267 @@ footer{
     font-weight: 500;
     margin-bottom: 0px;
     font-size: 12px;
+}
+
+/*################################## MEDIA QUERRIES ##################################*/
+@media (min-width: 375px){
+    #hamb{
+        display: none;
+    }
+
+    .porcentaje{
+        display: none;
+    }
+
+    #logo-cel{
+        margin-left: 7%;
+    
+    }
+
+    #button1{
+        margin-right: 7%;
+    }
+
+    main{
+        margin-left: 7%;
+        margin-right: 7%;
+    }
+    /*######## primera seccion laptop ##########*/
+
+    .section1{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 7%;
+    }
+
+    .precentacion{
+        justify-content: center;
+        align-items: flex-start;   
+    }
+
+    #h2s1{
+        font-family: 700;
+        font-size: 58px;
+        margin: 0%;
+        text-align: left;
+    }
+
+    #pp{
+        text-align: left;
+        margin: 0;
+    }
+    /*######## primera seccion laptop ##########*/
+    .section2{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 50px;
+    }
+
+    .articulos{
+        width: 40vw;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .info{
+        display: flex;
+    }
+
+    .h4{
+        font-size: 16px;
+        font-weight: 700;
+        padding-left: 0%;
+        margin-left: 110px;
+    }
+
+   #ps2{
+        text-align: left;
+        color: #B3B2B7;
+        font-weight: 500;
+        font-size: 15px;
+        margin-left: 110px;
+    }
+
+    #p-des{
+        text-align: left;
+        margin-left: 0%;
+        font-size: 16px;
+        font-weight: 500;
+        color: #000000;
+    }
+
+    #pres-des{
+        justify-content: flex-start;
+        margin-top: 50px;
+    }
+
+    #h2s2{
+        margin-top: 40px;
+        margin-left: 0%;
+        font-weight: 700;
+        color: #232851;
+        font-size: 36px;
+        text-align: left;
+    }
+
+    .articulos{
+        margin-top: 50px;
+        margin-right: 3%;
+    }
+
+    /*#####################TERCERA SECCION####################*/
+    .sec3{
+        display: none;
+    }
+    .imgs3{
+        width: 5vw;
+        margin-bottom: 30px;
+    }
+
+    /**#####################footer#######################*/
+    .sec-sup{
+        flex-direction: row;
+        justify-content: space-between;
+
+    }
+
+    .h2-footer{
+        display: none;
+    }
+
+    #button3{
+        margin-right: 9%;
+    }
+    /*$$$$$$$$$$$$$$$$$$$$$$$$$*/
+    .copyr{
+        display: none;
+    }
+
+    .sec-inf{
+        display: flex;
+        justify-content: center;
+        flex-direction: row-reverse;
+        width: 100vw;
+    }
+
+    .div-form{
+        display: flex;
+        flex-direction: column;
+        width: 30vw;
+        justify-content: space-evenly;
+    
+    }
+
+    .option{
+        justify-content: space-around;
+        align-items: flex-start;
+        width: 30vw;
+        font-size: 18px;
+        font-weight: 400;
+        color: #FFFFFF;
+        margin-top: 120px;
+    }
+
+    #logo-des{
+        margin: 0%;
+        width: 200px;
+    }
+
+    .ul-footer{
+        gap: 2rem;
+    }
+
+    .iconos{
+        justify-content: center;
+        gap: 1rem;
+        margin-bottom: 60px;
+    }
+
+    #p-form{
+        margin-bottom: 50px;
+        text-align: right;
+
+    }
+
+    .form{
+        justify-content: center;
+    }
+
+    .input{
+        padding: 20px;
+       
+    }
+    
+    .button-form{
+        width: 90px;
+        padding: 20px;
+        margin-left: 15px;
+    }
+
+    #h3s3{
+        margin-top: 70px;
+    }
+
+
+    .icon-des{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-evenly;
+        width: 30vw;
+    }
+
+}
+/*#############CEL##################3*/
+@media (max-width: 375px){
+    .nav-ul{
+        display: none;
+    }
+
+    #button1{
+        display: none;
+    }
+
+    .porcentaje2{
+        display: none;
+    }
+
+    .h4{
+        background-color: rgba(242, 95, 59, 0.10);
+    }
+
+    br{
+        display: none;
+    }
+
+    .rec-desk{
+        display: none;
+    }
+
+    .h2-footer-des{
+        display: none;
+    }
+
+    #p-form{
+        display: none;
+    }
+
+}
+
+/*pseudoclase*/
+.icon-des i:hover{
+    color: #F3613C;
+}
+
+.ul-footer li:hover{
+    color: #F3613C;
+}
+
+.nav-ul li:hover{
+    color: #B9B9C1;
+}
+
+.form input:invalid{
+    border: 1px solid rgb(226, 47, 47);;
+    color: red;
+    
 }

@@ -6,6 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <title>Managet</title>
         <link rel="stylesheet" href="./css/style.css">
 
@@ -14,94 +15,143 @@
          <!-- CABECERA DE LA PAGINA-->
         <header class="header">
             <img id="logo-cel" src="./img/logo.svg" alt="logo del sitio">
+            <nav>
+                <ul class="nav-ul">
+                    <li>Pricing</li>                   
+                    <li>Product</li>                    
+                    <li>About Us</li>                   
+                    <li>Careers</li>                    
+                    <li>Communit</li>
+                </ul>
+            </nav>
+
+            <button id="button1" class="button" type="submit">Get Started</button>
             <img id="hamb" src="./img/icon-hamburger.svg" alt="menu">
 
         </header>
          <!-- CUERPO DE LAPAGINA-->
         <main>
             <!-- PRIMERA SECCION-->
-            <section >
+            <section class="section1">
                 <img class="porcentaje" src="./img/illustration-intro.svg">
                 
                 <div class="precentacion">
-                    <h2 id="h2s1" class="titulo"> Bring everyone
-                        together to build
+                    <h2 id="h2s1" class="titulo"> Bring everyone <br>
+                        together to build <br>
                         better products.
                     </h2>
-                    <p class="p"> Manage makes it simple for software teams
-                        to plan day-to-day tasks while keeping the 
+                    <p id="pp" class="p"> Manage makes it simple for software teams <br>
+                        to plan day-to-day tasks while keeping the <br class="br">
                         large team goals in view 
                     </p>
-                    <button id="button1" class="button" type="submit">Get Started</button>
+                    <button class="button" type="submit">Get Started</button>
 
                 </div>
+
+                <img class="porcentaje2" src="./img/Ilustracion.png" alt="porcentaje">
 
             </section>
             <!-- SEGUNDA SECCION-->
-            <section>
-                <div class="precentacion">
+            <section class="section2">
+                <div id="pres-des" class="precentacion">
                     <h2 id="h2s2" class="titulo">What´s different about
                         Manage? 
                     </h2>
-                    <p class="p"> Manage provides all the functionality your
-                        teas needs, without the complexity. Our software is tailor-made for modern digital product teams
+                    <p id="p-des" class="p"> Manage provides all the functionality your <br>
+                        teas needs, without the complexity. Our <br> 
+                        software is tailor-made for modern digital <br>
+                         product teams
                     </P>
                 </div>
                 
-                <article>
-                    <div class="info"> 
-                        <span class="item">01</span>
-                        <h4 class="h4">Track company-wide progress</h4>
-                    </div>
-                    <p id="ps2" class="p"> See how your day-to-day tasks fit into the wider vision. 
-                        Go from tracking progress at the milestone level all the 
-                        way done to the smallest of details. Never lose sight of 
-                        the bigger picture again.
-                    </p>
-                </article>
+                <div class="articulos">
+                    <article class="art">
+                        <div class="info"> 
+                            <span class="item">01</span>
+                            <h4 class="h4">Track company-wide progress</h4>
+                        </div>
+                        <p id="ps2" class="p"> See how your day-to-day tasks fit into the wider vision. <br>
+                            Go from tracking progress at the milestone level all the <br>
+                            way done to the smallest of details. Never lose sight of <br>
+                            the bigger picture again.
+                        </p>
+                    </article>
 
-                <article>
-                    <div class="info"> 
-                        <span class="item">02</span>
-                        <h4 class="h4">Advance built-in reports</h4>
-                    </div>
-                    <p id="ps2" class="p"> Set internal delivery estimates and track progress toward 
-                        company goals. Our customisable dashboard helps you 
-                        build out the reports you need to keep key stakeholders informed.
-                    </p>
-                </article>
+                    <article class="art">
+                        <div class="info"> 
+                            <span class="item">02</span>
+                            <h4 class="h4">Advance built-in reports</h4>
+                        </div>
+                        <p id="ps2" class="p"> Set internal delivery estimates and track progress toward <br>
+                            company goals. Our customisable dashboard helps you <br>
+                            build out the reports you need to keep key stakeholders <br>
+                            informed.
+                        </p>
+                    </article>
 
-                <article>
-                    <div class="info"> 
-                        <span class="item">03</span>
-                        <h4 class="h4">Everything you need in one place</h4>
-                    </div>
-                    <p id="ps2" class="p">Stop jumping from one service to another to 
-                        communicate, store files, track tasks and share 
-                        documents. Manage offers an all-in-one team 
-                        productivity solution.
-                    </p>
-                </article>
-                
+                    <article class="art">
+                        <div class="info"> 
+                            <span class="item">03</span>
+                            <h4 class="h4">Everything you need in one place</h4>
+                        </div>
+                        <p id="ps2" class="p">Stop jumping from one service to another to <br>
+                            communicate, store files, track tasks and share <br>
+                            documents. Manage offers an all-in-one team <br>
+                            productivity solution.
+                        </p>
+                    </article>
+            </div>
             </section>
             <!-- TERCERA SECCION-->
             <section class="sec3">
+                    <h3 id="h3s3" class="titulo">What they´ve said</h3>
+                    <img class="imgs3" src="./img/avatar-ali.png">
+                    <h6 class="nombre">Ali Bravo</h6>
+                    <p class="p">“We have been able to cancel so many other 
+                        subscriptions since using manage. There ir no 
+                        more cross-channel confusion and everyone is 
+                        much more focused.”
+                    </p>
+                    <div class="circulos">
+                        <div class="cir"></div>
+                        <div id="cirr" class="cir"></div>
+                        <div class="cir"></div>
+                        <div class="cir"></div>
+                    </div>
+                    <button class="button" type="submit">Get Started</button>
+                
+            </section>
+            <!--maquetado de la parte inferior del main version desktop-->
+            <section class="rec-desk">
                 <h3 id="h3s3" class="titulo">What they´ve said</h3>
-                <img class="imgs3" src="./img/avatar-ali.png">
-                <h6 class="nombre">Ali Bravo</h6>
-                <p class="p">“We have been able to cancel so many other 
-                    subscriptions since using manage. There ir no 
-                    more cross-channel confusion and everyone is 
-                    much more focused.”
-                </p>
-                <div class="circulos">
-                    <div class="cir"></div>
-                    <div id="cirr" class="cir"></div>
-                    <div class="cir"></div>
-                    <div class="cir"></div>
-                </div>
-                <button class="button" type="submit">Get Started</button>
+                <div class="desk">
+                    <div id="rec1" class="rec">                        
+                        <img class="imgs3" src="./img/avatar-anisha.png">
+                        <h6 class="nombre">Ali Bravo</h6>
+                        <p class="p-desk">“Manage has supercharged our team´s workflow. <br>
+                                The ability to maintain visibility on larger milestones <br>
+                                at all times keeps everyone motivated.”
+                        </p>
+                    </div>
 
+                    <div class="rec">
+                        <img class="imgs3" src="./img/avatar-ali.png">
+                        <h6 class="nombre">Ali Bravo</h6>
+                        <p class="p-desk">“We have been able to cancel so many other <br>
+                                subscriptions since using manage. There ir no <br>
+                                more cross-channel confusion and everyone is much more focused.”
+                        </p>
+                    </div>
+
+                    <div id="rec2" class="rec">
+                        <img class="imgs3" src="./img/avatar-richard.png">
+                        <h6 class="nombre">Ali Bravo</h6>
+                        <p class="p-desk">“Manage allows us to provide structure and <br>
+                                process. It keeps us organized and focused. I can´t <br>
+                                stop recommending them to everyone i talk to!”
+                        </p>
+                    </div>
+                </div>
             </section>
 
         </main>
@@ -110,19 +160,25 @@
              <!-- SECCION SUPPERIOR-->
             <section class="sec-sup">
                 <h2 class="h2-footer">Simplify how 
-                    your teamwords 
+                    your team works 
                     today.
+                </h2>
+                <h2 class="h2-footer-des">
+                    Simplify hoy your team <br>
+                    words today.
                 </h2>
                 <button id="button3" class="button" type="submit">Get Started</button>
 
             </section>
              <!-- SECCION INFERIOR-->
             <section class="sec-inf">
-                    <form class="form" action="./data/form.php" method="POST">
-                            <input class="input" type="text" name="inbox" id="inbox" placeholder="Update in your inbox...">
-                            <button class="button-form" type="submit">go</button>
+                <div class="div-form">
+                    <form class="form" action="mailto:direccion@correo.com"  method="POST">
+                            <input class="input" type="email" name="email" id="email" placeholder="Update in your inbox...">
+                            <button class="button-form" type="submit">Go</button>
                     </form>
-
+                    <p id="p-form">Copyright 2020. All Rights Reserved</p>
+                </div>
                 <section class="option">
                     <div>
                         <nav>
@@ -136,7 +192,7 @@
                     </div>
                     <div>
                         <nav>
-                            <ul class="ul-footer">
+                            <ul id="nav-de" class="ul-footer">
                                 <li>Careers</li>
                                 <li>Community</li>
                                 <li>Privacy Policy</li>
@@ -146,17 +202,20 @@
 
                 </section>
                 
-                <div class="iconos">
-                    <img src="./img/icon-facebook.svg" alt="facebook">
-                    <img src="./img/icon-youtube.svg" alt="youtube">
-                    <img src="./img/icon-twitter.svg" alt="twitter">
-                    <img src="./img/icon-pinterest.svg" alt="pinterest">
-                    <img src="./img/icon-instagram.svg" alt="instagram">
+                <div class="icon-des">
+                    <div class="iconos">
+                        <i class="fa-brands fa-facebook-square fa-2x"></i>
+                        <i class="fa-brands fa-youtube  fa-2x"></i>
+                        <i class="fa-brands fa-twitter fa-2x"></i>
+                        <i class="fa-brands fa-pinterest fa-2x"></i>
+                        <i class="fa-brands fa-instagram fa-2x"></i>
+                    </div>
+                    
+                    <div class="Logo-pie">
+                        <img id="logo-des" src="./img/Logo-pie.png" alt="logo">
+                    </div>
                 </div>
-                
-                <div class="Logo-pie">
-                    <img src="./img/Logo-pie.png" alt="logo">
-                </div>
+
                 <div class="copyr">
                     <p>Copyright 2020. All Rights Reserved</p>
                 </div>
@@ -165,3 +224,4 @@
 
     </body>
 </html>
+
