@@ -21,6 +21,7 @@ header{
     gap: 2rem;
     font-family: 'Kdam Thmor Pro', sans-serif;
     font-size: 15px;
+    cursor:pointer;
 }
 
 #logo-cel{
@@ -43,6 +44,7 @@ header{
     box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.25);
     font-weight: 500;
     border: opx solid #000;
+    cursor:pointer;
     
 }
 
@@ -69,6 +71,7 @@ header{
     flex-direction: column;
     align-items: center;
     margin-top: 20px;
+    margin-left: 7%;
 }
 
 .porcentaje{
@@ -192,10 +195,6 @@ header{
     width: 30vw;
 }
 
-#rec2{
-    margin-right: 9%;
-}
-
 .p-desk{
     font-weight: 600;
     font-size: 16px;
@@ -205,10 +204,6 @@ header{
 }
 
 /*##########ESTILO PIE DE PAGINA##########*/
-footer{
-    width: 100vw;
-    height:800px;
-}
 .sec-sup{
     display: flex;
     flex-direction: column;
@@ -271,13 +266,18 @@ footer{
     color: #FFFFFF;    
     margin-right: 15px;
     font-weight: 700;
+    cursor:pointer;
 }
 
 /*copyr del desktop*/
-#p-form{
+.p-form{
     font-size: 12.5px;
     font-weight: 500;
     color: #8C8C94;
+    margin-bottom: 50px;
+    text-align: right;
+    margin-right: 7%;
+    padding: 13px;
 }
 
 /*###################ESTILOS DEL NAV ##################*/
@@ -323,7 +323,11 @@ footer{
 }
 
 /*################################## MEDIA QUERRIES ##################################*/
+/*mi resolucion es de 1920px
+pero apartir de 1300px va bien 
+*/
 @media (min-width: 375px){
+        
     #hamb{
         display: none;
     }
@@ -341,11 +345,22 @@ footer{
         margin-right: 7%;
     }
 
-    main{
+    /*#######footer de desktop######*/
+    footer{
+        height: 700px;
+    }
+
+    .sec-inf{
+        height: 50%;
+    }
+    .sec-sup{
+        height: 50%;
+    }
+    /* main{
         margin-left: 7%;
         margin-right: 7%;
-    }
-    /*######## primera seccion laptop ##########*/
+    }*/
+    /*######## primera seccion desktop ##########*/
 
     .section1{
         display: flex;
@@ -425,7 +440,6 @@ footer{
 
     .articulos{
         margin-top: 50px;
-        margin-right: 3%;
     }
 
     /*#####################TERCERA SECCION####################*/
@@ -468,18 +482,19 @@ footer{
         flex-direction: column;
         width: 30vw;
         justify-content: space-evenly;
+        align-items: flex-end;
     
     }
 
     .option{
         justify-content: space-around;
-        align-items: flex-start;
+        align-items: center;
         width: 30vw;
         font-size: 18px;
         font-weight: 400;
         color: #FFFFFF;
-        margin-top: 120px;
     }
+
 
     #logo-des{
         margin: 0%;
@@ -488,22 +503,19 @@ footer{
 
     .ul-footer{
         gap: 2rem;
+        cursor:pointer;
     }
 
     .iconos{
         justify-content: center;
         gap: 1rem;
         margin-bottom: 60px;
-    }
-
-    #p-form{
-        margin-bottom: 50px;
-        text-align: right;
-
+        cursor:pointer;
     }
 
     .form{
         justify-content: center;
+        margin-right: 7%;
     }
 
     .input{
@@ -531,7 +543,13 @@ footer{
 
 }
 /*#############CEL##################3*/
+/* la version mobile me funciona en 374px*/
 @media (max-width: 375px){
+    footer{
+        width: 100vw;
+        height:800px;
+    }
+
     .nav-ul{
         display: none;
     }
@@ -560,7 +578,7 @@ footer{
         display: none;
     }
 
-    #p-form{
+    .p-form{
         display: none;
     }
 
@@ -582,5 +600,17 @@ footer{
 .form input:invalid{
     border: 1px solid rgb(226, 47, 47);;
     color: red;
-    
+}
+
+.button:hover{
+    background-color: rgb(228, 140, 118);
+}
+
+.button-form:hover{
+    background-color: rgb(228, 140, 118);
+}
+
+#button3:hover{
+    background-color: #FFFFFF;
+    color: rgb(228, 140, 118);
 }
